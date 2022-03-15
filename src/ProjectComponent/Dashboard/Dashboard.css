@@ -1,0 +1,26 @@
+:root {
+	--main-color: #00c4e6;
+    --blue: #3d3c77;
+}
+
+.DashboardContainer {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    background-color: #dfdfdf28;
+    font-size: calc(10px + 2vmin);
+}
+
+.DashboardIMG {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.DashboardIMG img {
+    width: 20%;
+}
