@@ -1,4 +1,6 @@
 import './MyProject.css';
+import Button from '@mui/material/Button';
+import ExpandCircleDownIcon from '@mui/icons-material/ExpandCircleDown';
 
 function MyProject() {
   return (
@@ -28,20 +30,28 @@ function MyProject() {
         <div className="gridProject">
             <div className="project">
                 <img src="/Web-Application/custom-app-dev1.png" alt="WebApp"/>
-                <p>Web-Application</p>
+                <Button variant="contained" endIcon={<ExpandCircleDownIcon />}>
+                    <span>Web-Application</span>
+                </Button>
             </div>
             <div className="project">
                 <img 
                     src="/Dashboard/chartResize.png" alt="Dashboard"/>
-                <p>Dashboard</p>
+                <Button variant="contained" endIcon={<ExpandCircleDownIcon />}>
+                    <span>Dashboard</span>
+                </Button>
             </div>
             <div className="project">
                 <img src="/LandingPage/ChosenEnergy.png" alt="LandingPage"/>
-                <p>Landing Page</p>
+                <Button variant="contained" endIcon={<ExpandCircleDownIcon />}>
+                    <span>Landing Page</span>
+                </Button>
             </div>
             <div className="project">
                 <img src="/wireframe/webApp.png" alt="Wireframe"/>
-                <p>Wireframe</p>
+                <Button variant="contained" endIcon={<ExpandCircleDownIcon />}>
+                    <span>Wireframe</span>
+                </Button>
             </div>
         </div>
     </div>

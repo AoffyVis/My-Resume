@@ -1,5 +1,6 @@
 :root {
 	--main-color: #00c4e6;
+    --blue: #3d3c77;
 }
 
 .projectContainer {
@@ -45,7 +46,13 @@
     transform-origin: center center;
  }
 
- .project p{
-    font-size: calc(10px + 1vmin);
-    font-weight: 600;
+ button {
+     width: 50%;
+     height: auto;
+     margin: 0 auto;
+ }
+
+ button span {
+     font-size: calc(10px+1vmin);
+     font-weight: 600;
  }
