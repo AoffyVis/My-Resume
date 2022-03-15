@@ -8,42 +8,41 @@ function Skills() {
         </div>
         <div className="gridFrontSkills">
             <div className="Skill">
-                <img 
-                    src="https://image.flaticon.com/icons/png/512/919/919827.png" alt="html"/>
+                <img src="/htmlLogo.png" alt="html"/>
                 <p>Responsive</p>
                 <p>Your site looks good everywhere</p>
             </div>
             <div className="Skill">
-                <img src="https://image.flaticon.com/icons/png/512/919/919826.png" alt="css"/>
+                <img src="/CssLogo.png" alt="css"/>
                 <p>Customizable</p>
                 <p>Easy to theme and customize with CSS</p>
             </div>
             <div className="Skill">
-                <img src="https://image.flaticon.com/icons/png/512/919/919828.png" alt="js"/>
+                <img src="/JSLogo.png" alt="js"/>
                 <p>Consistent</p>
                 <p>A mature, well-tested, stable codebase</p>
             </div>
             <div className="Skill">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968559.png" alt="xd"/>
+                <img src="/xd-logo.png" alt="xd"/>
                 <p>Design like you always imagined</p>
                 <p>Wireframe, animate, prototype, collaborate, and more</p>
             </div>
         </div>
         <div className="gridBackEndSkill">
         <div className="Skill">
-                <img src="https://cdn-icons-png.flaticon.com/512/1260/1260667.png" alt="react"/>
+                <img src="/reactLogo.png" alt="react"/>
                 <p>React JS</p>
             </div>
             <div className="Skill">
-                <img src="https://cdn-icons.flaticon.com/png/512/3344/premium/3344281.png?token=exp=1640585701~hmac=c35758015238835422d94fa9bc6b9f8d" alt="webFramework"/>
-                <p>Web Framework</p>
+                <img src="/express-logo.png" alt="express"/>
+                <p>Express JS</p>
             </div>
             <div className="Skill">
-                <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="node"/>
+                <img src="/nodeLogo.png" alt="node"/>
                 <p>Node JS</p>
             </div>
             <div className="Skill">
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968364.png"
+                <img src="/sqlLogo.png"
                     alt="sql"/>
                 <p>SQL SERVER</p>
             </div>
