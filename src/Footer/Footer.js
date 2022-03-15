@@ -4,7 +4,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FormComponent from './FormComponent/FormComponent';
 import { useState } from 'react'
-import Contact from './ContactData/Contact'
+// import Contact from './ContactData/Contact'
 
 
 function Footer() {
@@ -48,9 +48,6 @@ function Footer() {
                 </div>
             </div>
         </div>
-        {/* <div>
-            <Contact contacts = {contactLists}/>
-        </div> */}
     </div>
   );
 }

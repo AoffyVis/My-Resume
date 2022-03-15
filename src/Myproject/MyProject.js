@@ -19,26 +19,26 @@ function MyProject() {
         <div className="gridProject">
             <div className="project">
                 <img src="/Web-Application/custom-app-dev1.png" alt="WebApp"/>
-                <Button variant="contained" endIcon={<ExpandCircleDownIcon/>} onClick={() => setIsOpen("WebApp")} >
+                <Button className='openBtn' variant="contained" endIcon={<ExpandCircleDownIcon/>} onClick={() => setIsOpen("WebApp")} >
                     <span>Web-Application</span>
                 </Button>
             </div>
             <div className="project">
                 <img 
                     src="/Dashboard/chartResize.png" alt="Dashboard"/>
-                <Button variant="contained" endIcon={<ExpandCircleDownIcon />} onClick={() => setIsOpen("Dashboard")} >
+                <Button className='openBtn' variant="contained" endIcon={<ExpandCircleDownIcon />} onClick={() => setIsOpen("Dashboard")} >
                     <span>Dashboard</span>
                 </Button>
             </div>
             <div className="project">
                 <img src="/LandingPage/ChosenEnergy.png" alt="LandingPage"/>
-                <Button variant="contained" endIcon={<ExpandCircleDownIcon />} onClick={() => setIsOpen("LandingPage")} >
+                <Button className='openBtn' variant="contained" endIcon={<ExpandCircleDownIcon />} onClick={() => setIsOpen("LandingPage")} >
                     <span>Landing Page</span>
                 </Button>
             </div>
             <div className="project">
                 <img src="/wireframe/webApp.png" alt="Wireframe"/>
-                <Button variant="contained" endIcon={<ExpandCircleDownIcon />} onClick={() => setIsOpen("Wireframe")} >
+                <Button className='openBtn' variant="contained" endIcon={<ExpandCircleDownIcon />} onClick={() => setIsOpen("Wireframe")} >
                     <span>Wireframe</span>
                 </Button>
             </div>
