@@ -24,3 +24,7 @@
 .DashboardIMG img {
     width: 20%;
 }
+
+.DashboardIMG img:nth-child(5) {
+    width: 12%;
+}
