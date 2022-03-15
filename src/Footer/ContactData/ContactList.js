@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types'; // ES6
 
-const ContactList = ({id, email, phone}) => {
+const ContactList = ({id, email, Message}) => {
     return (
         <div>
             <p>{email}</p>
-            <p>{phone}</p>
+            <p>{Message}</p>
         </div>
     );
 }
@@ -12,7 +12,7 @@ const ContactList = ({id, email, phone}) => {
 ContactList.propTypes = {
     id:PropTypes.string.isRequired,
     email:PropTypes.string.isRequired,
-    phone:PropTypes.number.isRequired,
+    Message:PropTypes.string.isRequired,
 }
 
 export default ContactList

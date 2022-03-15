@@ -6,7 +6,7 @@ import Swal from 'sweetalert2'
 
 const FormComponent = (props) => {
     const [email, setEmail] = useState('')
-    const [phone, setPhone] = useState('')
+    const [Message, setMessage] = useState('')
     const [formValid, setFormValid] = useState(false)
 
     // contact to google sheet
@@ -18,9 +18,9 @@ const FormComponent = (props) => {
         setEmail(e.target.value)
     }
 
-    const inputPhone = (e) => {
+    const inputMSG = (e) => {
         // console.log(e.target.value)
-        setPhone(e.target.value)
+        setMessage(e.target.value)
     }
 
     //Post input value to contactComponent
@@ -30,18 +30,18 @@ const FormComponent = (props) => {
         const msgStoreData = {
             id: uuidv4(),
             email:email,
-            phone:Number(phone),
+            MSG:Message,
         }
 
         const contactData = {
             Email:email,
-            TelNo:phone,
+            Message:Message,
             TimeStamp: new Date().toLocaleString(),
         }
         //console.log(msgStoreData)
         props.onAddContact(msgStoreData)
         setEmail('') 
-        setPhone('')
+        setMessage('')
 
         //Post Google spreadsheet API
         axios.post('https://sheet.best/api/sheets/c7154c86-1afe-4075-8abd-4404ed7fb599', contactData)
@@ -56,9 +56,9 @@ const FormComponent = (props) => {
     }
 
     useEffect(() => {
-        const checkTxtOnInput = email.trim().length>0 && phone.trim().length>0
+        const checkTxtOnInput = email.trim().length>0 && Message.trim().length>0
         setFormValid(checkTxtOnInput)
-    }, [email, phone])
+    }, [email, Message])
     
     return (
         <div className='formComponent'>
@@ -69,8 +69,8 @@ const FormComponent = (props) => {
                         <input type="text" placeholder="Email Address" onChange={inputEmail} value={email}></input>
                     </div>
                     <div className="form-control">
-                        <label>Phone: </label>
-                        <input type="text" placeholder="type message here!" onChange={inputPhone} value={phone}></input>
+                        <label>Message: </label>
+                        <input type="text" placeholder="type message here!" onChange={inputMSG} value={Message}></input>
                     </div>
                     <div>
                         <button type="submit" className='sendBtn' disabled={!formValid}>Send me!</button>
