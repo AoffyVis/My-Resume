@@ -22,10 +22,18 @@
 
 .WebAppIMG img {
     width: 90%;
+    border-radius: 10px;
 }
 
 .WebAppDetail {
-    width: 40%;
+    width: 50%;
     height: auto;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.WebAppDetail img{
+    width: 30%;
+    margin: 10px;
 }

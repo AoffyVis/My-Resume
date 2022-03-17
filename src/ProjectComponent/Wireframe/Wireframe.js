@@ -7,7 +7,7 @@ function Wireframe() {
           <img src="/wireframe/webApp.png" alt="wireframe"/>
         </div>
         <div className='WireframeDetail'>
-          <p>Adobe XD</p>
+          <img src="/xd-logo.png" alt="html"/>
         </div>
     </div>
     );

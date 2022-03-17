@@ -50,6 +50,7 @@
      width: 80%;
      height: auto;
      margin: 0 auto;
+     padding: 10px 0;
  }
 
  .openBtn span {
@@ -67,6 +68,10 @@
         grid-template-columns: repeat(2,1fr);
         grid-gap: 10px;
     }
+
+    .project img:hover {
+        transform: none;
+     }
     
  }
 

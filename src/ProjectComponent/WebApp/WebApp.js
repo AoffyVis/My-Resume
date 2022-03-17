@@ -7,7 +7,11 @@ function WebApp() {
           <img src="/Web-Application/AllWebApp.png" alt="WebApp"/>
         </div>
         <div className='WebAppDetail'>
-          <p>EJS, NodeJS, CSS, SQL Server, JS Library</p>
+          <img src="/express-logo.png" alt="ejs"/>
+          <img src="/nodeLogo.png" alt="node"/>
+          <img src="/CssLogo.png" alt="css"/>
+          <img src="/sqlLogo.png" alt="sql"/>
+          <img src="/JSLogo.png" alt="js"/>
         </div>
       </div>
     );

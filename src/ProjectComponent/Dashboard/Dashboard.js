@@ -7,7 +7,12 @@ function Dashboard() {
           <img src="/Dashboard/Dashboard.png" alt="Dashboard"/>
         </div>
         <div className='DashboardDetail'>
-          <p>EJS, NodeJS, CSS, SQL Server, ChartJS, JS Library</p>
+          <img src="/express-logo.png" alt="ejs"/>
+          <img src="/nodeLogo.png" alt="node"/>
+          <img src="/CssLogo.png" alt="css"/>
+          <img src="/sqlLogo.png" alt="sql"/>
+          <img src="/JSLogo.png" alt="JS"/>
+          <img src="/chartJS-1.jpg" alt="chartJS"/>
         </div>
       </div>
     );

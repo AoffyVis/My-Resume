@@ -22,10 +22,18 @@
 
 .WireframeIMG img {
     width: 90%;
+    border-radius: 10px;
 }
 
 .WireframeDetail {
-    width: 40%;
+    width: 50%;
     height: auto;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.WireframeDetail img{
+    width: 30%;
+    margin: 10px;
 }

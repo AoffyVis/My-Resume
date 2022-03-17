@@ -7,7 +7,9 @@ function LandingPage() {
           <img src="/LandingPage/LandingPage.png" alt="LandingPage"/>
         </div>
         <div className='LandingPageDetail'>
-          <p>HTML, CSS, JAVASCRIPT, jQuery, JS Library, Responsive Design</p>
+          <img src="/htmlLogo.png" alt="html"/>
+          <img src="/CssLogo.png" alt="css"/>
+          <img src="/JSLogo.png" alt="js"/>
         </div>
     </div>
     );
