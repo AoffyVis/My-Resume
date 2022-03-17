@@ -4,11 +4,14 @@ import WebApp from '../ProjectComponent/WebApp/WebApp'
 import Dashboard from '../ProjectComponent/Dashboard/Dashboard'
 import LandingPage from '../ProjectComponent/LandingPage/LandingPage'
 import Wireframe from '../ProjectComponent/Wireframe/Wireframe'
-// import Button from '@mui/material/Button';
-// import ExpandCircleDownIcon from '@mui/icons-material/ExpandCircleDown';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 function MyProject() {
-//   const [isOpen, setIsOpen] = useState("")
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+    }, []);
 
   return (
     <div className="projectContainer" id='projectContainer'>
@@ -21,12 +24,16 @@ function MyProject() {
                     <span>Web Application</span>
                 </div>
                 <div className="projectDetail">
-                    <WebApp />
+                    <div data-aos="slide-left">
+                        <WebApp/>
+                    </div>
                 </div>
             </div>
             <div className="project">
-            <div className="projectDetail">
-                    <Dashboard />
+                <div className="projectDetail">
+                    <div data-aos="slide-right">
+                        <Dashboard />
+                    </div>
                 </div>
                 <div className="projectTopic">
                     <span>Dashboard</span>
@@ -37,64 +44,23 @@ function MyProject() {
                     <span>Landing Page</span>
                 </div>
                 <div className="projectDetail">
-                    <LandingPage />
+                    <div data-aos="slide-left">
+                        <LandingPage />
+                    </div>
                 </div>
             </div>
             <div className="project">
                 
                 <div className="projectDetail">
-                    <Wireframe />
+                    <div data-aos="slide-right">
+                        <Wireframe />
+                    </div>
                 </div>
                 <div className="projectTopic">
                     <span>Wireframe</span>
                 </div>
             </div>
         </div>
-            {/* <div className="gridProject">
-                <div className="project">
-                    <img src="/Web-Application/custom-app-dev1.png" alt="WebApp"/>
-                        <Button className='openBtn' variant="contained" endIcon={<ExpandCircleDownIcon/>} onClick={() => setIsOpen("WebApp")} >
-                        <span>Web-Application</span>
-                        </Button>
-                    </div>
-                    <div className="projectDetail">
-                        <WebApp />
-                    </div>
-                </div>
-                <div className="project">
-                    <img 
-                        src="/Dashboard/chartResize.png" alt="Dashboard"/>
-                    <Button className='openBtn' variant="contained" endIcon={<ExpandCircleDownIcon />} onClick={() => setIsOpen("Dashboard")} >
-                        <span>Dashboard</span>
-                    </Button>
-                </div>
-                <div className="project">
-                    <img src="/LandingPage/ChosenEnergyPage.png" alt="LandingPage"/>
-                    <Button className='openBtn' variant="contained" endIcon={<ExpandCircleDownIcon />} onClick={() => setIsOpen("LandingPage")} >
-                        <span>Landing Page</span>
-                    </Button>
-                </div>
-                <div className="project">
-                    <img src="/wireframe/webApp.png" alt="Wireframe"/>
-                    <Button className='openBtn' variant="contained" endIcon={<ExpandCircleDownIcon />} onClick={() => setIsOpen("Wireframe")} >
-                        <span>Wireframe</span>
-                    </Button>
-                </div>
-            </div> */}
-            {/* <div>
-                {isOpen === "WebApp" && <div>
-                    <WebApp />
-                </div>}
-                {isOpen === "Dashboard" && <div>
-                    <Dashboard />
-                </div>}
-                {isOpen === "LandingPage" && <div>
-                    <LandingPage />
-                </div>}
-                {isOpen === "Wireframe" && <div>
-                    <Wireframe />
-                </div>}
-            </div> */}
     </div>
   );
 }
