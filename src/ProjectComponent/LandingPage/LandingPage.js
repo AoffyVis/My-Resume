@@ -4,10 +4,10 @@ function LandingPage() {
     return (
       <div className="LandingPageContainer">
         <div className='LandingPageIMG'>
-          <img src="/LandingPage/ChosenEnergy.png" alt="LandingPage"/>
-          <img src="/LandingPage/ChosenGroup.png" alt="LandingPage"/>
-          <img src="/LandingPage/TDG.png" alt="LandingPage"/>
-          <img src="/LandingPage/LandingProduct.png" alt="LandingPage"/>
+          <img src="/LandingPage/LandingPage.png" alt="LandingPage"/>
+        </div>
+        <div className='LandingPageDetail'>
+          <p>HTML, CSS, JAVASCRIPT, jQuery, JS Library, Responsive Design</p>
         </div>
     </div>
     );

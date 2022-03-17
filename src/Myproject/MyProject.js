@@ -31,7 +31,7 @@ function MyProject() {
                 </Button>
             </div>
             <div className="project">
-                <img src="/LandingPage/ChosenEnergy.png" alt="LandingPage"/>
+                <img src="/LandingPage/ChosenEnergyPage.png" alt="LandingPage"/>
                 <Button className='openBtn' variant="contained" endIcon={<ExpandCircleDownIcon />} onClick={() => setIsOpen("LandingPage")} >
                     <span>Landing Page</span>
                 </Button>
