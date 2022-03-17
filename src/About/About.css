@@ -10,6 +10,7 @@
     padding: 3rem;
     align-items: center;
     background-color: #282c34;
+    font-size: 2vw;
 }
 
 .img-me {
@@ -24,6 +25,11 @@
 }
 
 .myDesc h2{
+    text-transform: uppercase;
+    background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ63HzSjLWxnn9QyaOfVOxXzw6lgMBpfihNSA&usqp=CAU');
     text-decoration: underline;
     text-decoration-color: var(--main-color);
 }

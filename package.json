@@ -19,6 +19,7 @@
     "react-scripts": "5.0.0",
     "sweetalert2": "^11.3.1",
     "tabletop": "^1.6.3",
+    "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.2"
   },
   "scripts": {

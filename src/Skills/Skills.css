@@ -3,31 +3,39 @@
 }
 
 .skillsContainer {
+    width: 100%;
+    margin: 0 auto;
     display: block;
-    background-color: #ffffff;
-    font-size: calc(10px + 2vmin);
-    padding: 3rem;
+    justify-content: center;
+    background-color: #f3f3f383;
+    font-size: 2vw;
 }
 
 .skillsContainer h2 {
+    text-transform: uppercase;
+    background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	background-image: url('https://wallpaper.dog/large/11032432.jpg');
     text-decoration: underline;
     text-decoration-color: var(--main-color);
 }
 
 .gridFrontSkills {
+    width: 80%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-gap: 1rem;
+    grid-gap: 10px;
     align-items: center;
 }
 
 .gridBackEndSkill {
+    width: 80%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-gap: 1rem;
-    padding-bottom: 2rem;
+    grid-gap: 10px;
     align-items: center;
 }
 
@@ -40,7 +48,7 @@
  }
 
  .Skill img {
-     width: 40%;
+     width: 30%;
      height: auto;
      margin: 0 auto;
  }
