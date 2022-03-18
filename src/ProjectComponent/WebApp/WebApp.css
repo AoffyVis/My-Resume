@@ -4,36 +4,31 @@
 }
 
 .WebAppContainer {
-    width: 80%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
-    font-size: calc(10px + 2vmin);
-    padding: 5rem 0;
 }
 
-.WebAppIMG {
+.WebApp {
     width: 100%;
     height: auto;
     margin: 0 auto;
 }
 
-.WebAppIMG img {
-    width: 90%;
+.WebApp img {
+    width: 100%;
     border-radius: 10px;
 }
 
 .WebAppDetail {
-    width: 50%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .WebAppDetail img{
-    width: 30%;
-    margin: 10px;
+    width: 20%;
 }

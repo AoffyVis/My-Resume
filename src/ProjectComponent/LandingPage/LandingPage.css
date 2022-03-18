@@ -10,30 +10,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: calc(10px + 2vmin);
-    padding: 5rem 0;
 }
 
-.LandingPageIMG {
+.LandingPage {
     width: 100%;
     height: auto;
     margin: 0 auto;
 }
 
-.LandingPageIMG img {
-    width: 90%;
+.LandingPage img {
+    width: 100%;
     border-radius: 10px;
 }
 
 .LandingPageDetail {
-    width: 50%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .LandingPageDetail img{
-    width: 30%;
-    margin: 10px;
+    width: 20%;
 }

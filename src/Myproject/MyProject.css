@@ -32,7 +32,7 @@
 }
 
 .project {
-    width: 90%;
+    width: 70%;
     height: auto;
     margin: 0 auto;
     display: flex;
@@ -40,13 +40,14 @@
     margin-bottom: 1rem;
  }
 
- .project img {
-     width: 80%;
+ .project:nth-child(2),.project:nth-child(4) {
+     flex-direction: row-reverse;
+ }
+
+ .projectTopic, .projectDetail {
+     width: 100%;
      height: auto;
      margin: 0 auto;
-     border-radius: 10px;
-     transition: transform .2s; 
-     transition: ease-in-out .5s;
  }
 
  .projectTopic span {
@@ -58,18 +59,6 @@
     background: linear-gradient(to right, #330867 0%, #30CFD0 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
- }
-
- .openBtn {
-     width: 80%;
-     height: auto;
-     margin: 0 auto;
-     padding: 10px 0;
- }
-
- .openBtn span {
-     font-size: calc(10px+1vmin);
-     font-weight: 600;
  }
 
  @media only screen and (max-width: 1045px) {

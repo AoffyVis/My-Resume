@@ -1,11 +1,12 @@
 import './About.css';
-import img from './Rx7.png';
+import ProfileImage from '../assets/profile-pic-1.jpg';
+import CV from '../assets/CV/Resume-JirawatKaewmanee.pdf';
 
 function About() {
   return (
     <div className="aboutMe" id='aboutMe'>
         <div>
-            <img src={img} className="img-me" alt="img" />
+            <img src={ProfileImage} className="img-me" alt="img" />
         </div>
         <div className="myDesc">
             <h2>
@@ -23,6 +24,9 @@ function About() {
                 For the back-end I also work with Javascript (NodeJS, ExpressJS). But, of course,
                 I also have knowledge of computer programming languages such as PHP, MSSQL, and hardware engineering
             </p>
+            <div className='btn'>
+              <a href={CV} download className='btn-primary'> Download CV</a>
+            </div>
         </div>
     </div>
   );

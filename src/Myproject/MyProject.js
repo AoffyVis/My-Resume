@@ -26,19 +26,19 @@ function MyProject() {
                     <span>Web Application</span>
                 </div>
                 <div className="projectDetail">
-                    <div data-aos="slide-left" data-aos-offset="400">
+                    <div data-aos="fade-in" data-aos-offset="500">
                         <WebApp/>
                     </div>
                 </div>
             </div>
             <div className="project">
-                <div className="projectDetail">
-                    <div data-aos="slide-right" data-aos-offset="400">
-                        <Dashboard />
-                    </div>
-                </div>
                 <div className="projectTopic">
                     <span>Dashboard</span>
+                </div>
+                <div className="projectDetail">
+                    <div data-aos="fade-in" data-aos-offset="500">
+                        <Dashboard />
+                    </div>
                 </div>
             </div>
             <div className="project">
@@ -46,20 +46,19 @@ function MyProject() {
                     <span>Landing Page</span>
                 </div>
                 <div className="projectDetail">
-                    <div data-aos="slide-left" data-aos-offset="400">
+                    <div data-aos="fade-in" data-aos-offset="500">
                         <LandingPage />
                     </div>
                 </div>
             </div>
             <div className="project">
-                
-                <div className="projectDetail">
-                    <div data-aos="slide-right" data-aos-offset="400">
-                        <Wireframe />
-                    </div>
-                </div>
                 <div className="projectTopic">
                     <span>Wireframe</span>
+                </div>
+                <div className="projectDetail">
+                    <div data-aos="fade-in" data-aos-offset="500">
+                        <Wireframe />
+                    </div>
                 </div>
             </div>
         </div>

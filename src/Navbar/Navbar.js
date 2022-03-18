@@ -37,7 +37,7 @@ function Navbar() {
             </li>
             <li className="link">
               {/* <a href="#FooterContainer">Contact</a> */}
-              <Link to="FooterContainer" spy={true} smooth={true} offset={-100} duration={500}>Contact</Link>
+              <Link to="FooterContainer" spy={true} smooth={true} offset={100} duration={500}>Contact</Link>
             </li>
           </ul>
         </div>

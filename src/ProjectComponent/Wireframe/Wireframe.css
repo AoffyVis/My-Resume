@@ -10,30 +10,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: calc(10px + 2vmin);
-    padding: 5rem 0;
 }
 
-.WireframeIMG {
+.Wireframe {
     width: 100%;
     height: auto;
     margin: 0 auto;
 }
 
-.WireframeIMG img {
-    width: 90%;
+.Wireframe img {
+    width: 100%;
     border-radius: 10px;
 }
 
 .WireframeDetail {
-    width: 50%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .WireframeDetail img{
-    width: 30%;
-    margin: 10px;
+    width: 20%;
 }
