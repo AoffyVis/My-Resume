@@ -24,8 +24,8 @@ function Skills() {
             </div>
             <div className="Skill">
                 <img src="/xd-logo.png" alt="xd"/>
-                <p>Design like you always imagined</p>
-                <p>Wireframe, animate, prototype, collaborate, and more</p>
+                <p>Design as imagined</p>
+                <p>Wireframe, animate, prototype</p>
             </div>
         </div>
         <div className="gridBackEndSkill">

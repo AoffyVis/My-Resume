@@ -44,7 +44,12 @@ a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
 @media only screen and (max-width: 768px) {
+
     .App-header {
-        min-height: 50vh;
+        min-height: 65vh;
+    }
+
+    .App-header h2, .downArrow {
+        font-size: 8vw;
     }
 }

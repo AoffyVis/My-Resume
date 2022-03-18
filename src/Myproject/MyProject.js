@@ -12,6 +12,10 @@ function MyProject() {
     useEffect(() => {
         Aos.init({ 
             duration: 2000,
+            disable: function () {
+                var maxWidth = 768;
+                return window.innerWidth < maxWidth;
+            }
         });
     }, []);
 
