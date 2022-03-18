@@ -24,7 +24,7 @@ function Header() {
         >
         <span className="downArrow">⮋</span>
         </a> */}
-        <Link to="aboutMe" spy={true} smooth={true} offset={100} duration={500}><span className="downArrow">⮋</span></Link>
+        <Link to="aboutMe" spy={true} smooth={true} offset={-100} duration={500}><span className="downArrow">⮋</span></Link>
     </div>
   );
 }

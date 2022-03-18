@@ -10,7 +10,9 @@ import { useEffect } from 'react';
 
 function MyProject() {
     useEffect(() => {
-        Aos.init({ duration: 2000 });
+        Aos.init({ 
+            duration: 2000,
+        });
     }, []);
 
   return (
@@ -24,14 +26,14 @@ function MyProject() {
                     <span>Web Application</span>
                 </div>
                 <div className="projectDetail">
-                    <div data-aos="slide-left">
+                    <div data-aos="slide-left" data-aos-offset="400">
                         <WebApp/>
                     </div>
                 </div>
             </div>
             <div className="project">
                 <div className="projectDetail">
-                    <div data-aos="slide-right">
+                    <div data-aos="slide-right" data-aos-offset="400">
                         <Dashboard />
                     </div>
                 </div>
@@ -44,7 +46,7 @@ function MyProject() {
                     <span>Landing Page</span>
                 </div>
                 <div className="projectDetail">
-                    <div data-aos="slide-left">
+                    <div data-aos="slide-left" data-aos-offset="400">
                         <LandingPage />
                     </div>
                 </div>
@@ -52,7 +54,7 @@ function MyProject() {
             <div className="project">
                 
                 <div className="projectDetail">
-                    <div data-aos="slide-right">
+                    <div data-aos="slide-right" data-aos-offset="400">
                         <Wireframe />
                     </div>
                 </div>
