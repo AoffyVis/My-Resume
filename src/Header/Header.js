@@ -1,5 +1,6 @@
 import './Header.css';
 import Typewriter from 'typewriter-effect';
+import { Link } from "react-scroll";
 
 function Header() {
   return (
@@ -17,12 +18,13 @@ function Header() {
           />
         </div>
         {/* <h4> I'm Front End Developer</h4> */}
-        <a
+        {/* <a
         className="App-link"
         href="#aboutMe"
         >
         <span className="downArrow">⮋</span>
-        </a>
+        </a> */}
+        <Link to="aboutMe" spy={true} smooth={true} offset={100} duration={500}><span className="downArrow">⮋</span></Link>
     </div>
   );
 }

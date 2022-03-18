@@ -3,6 +3,9 @@
 }
 
 /* Navbar section */
+a {
+    cursor: pointer;
+}
 
 .nav {
     width: 100%;
@@ -59,6 +62,11 @@
 
 .nav div.main_list ul li a:hover {
     color: var(--main-color);
+}
+
+.nav div.main_list .link .active {
+    padding-bottom: 1px;
+    border-bottom: 3px solid var(--main-color);
 }
 
 .mobile-menu {
