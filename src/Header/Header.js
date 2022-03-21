@@ -1,12 +1,15 @@
 import './Header.css';
 import Typewriter from 'typewriter-effect';
 import { Link } from "react-scroll";
+import MyImage from '../assets/profile-pic-4.png';
 
 function Header() {
   return (
     <div className="App-header" id='header'>
+      <div className='header__detail'>
+        <p>Hello, I'm</p>
         <h2>
-        Jirawat Kaewmanee
+          Jirawat Kaewmanee
         </h2>
         <div className="typeWritter">
           <Typewriter
@@ -17,14 +20,13 @@ function Header() {
             }}
           />
         </div>
-        {/* <h4> I'm Front End Developer</h4> */}
-        {/* <a
-        className="App-link"
-        href="#aboutMe"
-        >
-        <span className="downArrow">⮋</span>
-        </a> */}
-        <Link to="aboutMe" spy={true} smooth={true} offset={-100} duration={500}><span className="downArrow">⮋</span></Link>
+        <Link to="about" spy={true} smooth={true} offset={-20} duration={500}><span className="downArrow">⮋</span></Link>
+      </div>
+      <div className='header__img'>
+        <div className='header__img__box'>
+          <img src={MyImage} className="my__image" alt="about_me_IMG" />
+        </div>
+      </div>
     </div>
   );
 }

@@ -30,7 +30,7 @@ function MyProject() {
                     <span>Web Application</span>
                 </div>
                 <div className="projectDetail">
-                    <div data-aos="fade-in" data-aos-offset="500">
+                    <div data-aos="fade-in" data-aos-offset="200">
                         <WebApp/>
                     </div>
                 </div>

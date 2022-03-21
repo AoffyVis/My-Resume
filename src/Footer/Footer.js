@@ -41,7 +41,7 @@ function Footer() {
                 <h2>Quick Navigation</h2>
                 <div className="quickNav">
                     <a href="#header">Home</a>
-                    <a href="#aboutMe">About</a>
+                    <a href="#about">About</a>
                     <a href="#skillsContainer">Skills</a>
                     <a href="#projectContainer">My Projects</a>
                     <a href="#FooterContainer">Contact me</a>

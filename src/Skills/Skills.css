@@ -1,5 +1,6 @@
 :root {
 	--main-color: #00c4e6;
+    --underline-color: #ff8800;
 }
 
 .skillsContainer {
@@ -7,7 +8,15 @@
     margin: 0 auto;
     display: block;
     justify-content: center;
-    background-color: #f3f3f383;
+    background: linear-gradient(
+        to bottom, 
+        rgba(221, 221, 221, 0.4) 40%,
+        #ffffff 100%),
+        url("https://wallpaperaccess.com/full/289374.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 2rem;
     font-size: 2vw;
 }
 
@@ -18,7 +27,7 @@
 	color: transparent;
 	background-image: url('https://wallpaper.dog/large/11032432.jpg');
     text-decoration: underline;
-    text-decoration-color: var(--main-color);
+    text-decoration-color: var(--underline-color);
 }
 
 .gridFrontSkills {

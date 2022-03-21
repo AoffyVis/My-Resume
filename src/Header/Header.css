@@ -1,10 +1,17 @@
 .App-header {
-    background-image: url('../../public/bg.jpg');
+    /* background-image: url('../../public/bg.jpg'); */
+    /* background: linear-gradient(
+        to bottom, 
+        #0c0c0c 20%,
+        #4e4e4e 60%,
+        transparent 100%),
+        url('../../public/frontend-bg.png'); */
+    background-image: url('https://www.egeniq.nl/sites/default/files/2020-06/frontend_webdeveloper.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,22 +20,36 @@
     color: #ffffff;
 }
 
-.App-header h2 {
+.header__detail {
+    position: absolute;
+    text-align: left;
+    margin-right: 40%;
+}
+
+.header__detail p {
+    font-size: 2vw;
+    color: #ff8800;
+    line-height: 0px;
+}
+
+.header__detail h2 {
     background-clip: text;
 	-webkit-background-clip: text;
-	color: transparent;
-	background-image: url('https://wallpaper.dog/large/11032432.jpg');
+	color: #ffffff;
+	/* background-image: url('https://wallpaper.dog/large/11032432.jpg'); */
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ63HzSjLWxnn9QyaOfVOxXzw6lgMBpfihNSA&usqp=CAU'); */
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
 .downArrow{
     background-clip: text;
 	-webkit-background-clip: text;
-	color: transparent;
-	background-image: url('https://wallpaper.dog/large/11032432.jpg');
+    color: #ff8800;
+	/* color: transparent;
+	background-image: url('https://wallpaper.dog/large/11032432.jpg'); */
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-stroke-color: rgb(0, 0, 0);
     font-size: 5vw;
 }
 
@@ -42,6 +63,33 @@ a:hover { text-decoration: none; }
 
 
 a:active { text-decoration: none; }
+
+.header__img {
+    width: 30%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 20% 0 0 0;
+    background: linear-gradient(#a7c6ebbd, transparent);
+    display: grid;
+    margin-top: 5%;
+    margin-left: 70%;
+}
+
+.header__img__box {
+    display: flex;
+    align-items: center;
+}
+
+.header__img__box img{
+    width: 100%;
+    position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+    .App-header {
+        min-height: 65vh;
+    }
+}
 
 @media only screen and (max-width: 768px) {
 

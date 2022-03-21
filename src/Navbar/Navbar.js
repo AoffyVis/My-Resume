@@ -25,7 +25,7 @@ function Navbar() {
             </li>
             <li className="link">
               {/* <a href="#aboutMe">About</a> */}
-              <Link to="aboutMe" spy={true} smooth={true} offset={-100} duration={500}>About</Link>
+              <Link to="about" spy={true} smooth={true} offset={-100} duration={500}>About</Link>
             </li>
             <li className="link">
               {/* <a href="#skillsContainer">Skills</a> */}

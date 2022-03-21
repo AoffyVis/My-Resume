@@ -3,6 +3,7 @@
 }
 
 .FooterContainer {
+    min-height: 60vh;
     background: #252b33 url("https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/envelope.svg?sanitize=true") no-repeat right;
     padding: 2rem 0;
     font-size: calc(10px + 2vmin);

@@ -1,11 +1,16 @@
 :root {
 	--main-color: #00c4e6;
     --blue: #3d3c77;
+    --underline-color: #ff8800;
 }
 
 .projectContainer {
     display: block;
-    background: url("https://i.pinimg.com/originals/46/1d/25/461d254f8563f8945ce3a385f289df17.jpg") no-repeat;
+    background: linear-gradient(
+        to top, 
+        rgba(221, 221, 221, 0.4) 80%,
+        #ffffff 100%),
+    url("https://i.pinimg.com/originals/46/1d/25/461d254f8563f8945ce3a385f289df17.jpg") no-repeat;
     background-size: cover;
     background-clip: border-box;
     font-size: 2vw;
@@ -20,7 +25,7 @@
 	color: transparent;
 	background-image: url('https://wallpaper.dog/large/11032432.jpg');
     text-decoration: underline;
-    text-decoration-color: var(--main-color);
+    text-decoration-color: var(--underline-color);
 }
 
 .gridProject {
