@@ -3,8 +3,8 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FormComponent from './FormComponent/FormComponent';
+import { Link } from "react-scroll";
 import { useState } from 'react'
-// import Contact from './ContactData/Contact'
 
 
 function Footer() {
@@ -40,11 +40,11 @@ function Footer() {
             <div className="contact">
                 <h2>Quick Navigation</h2>
                 <div className="quickNav">
-                    <a href="#header">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skillsContainer">Skills</a>
-                    <a href="#projectContainer">My Projects</a>
-                    <a href="#FooterContainer">Contact me</a>
+                    <Link to="header" spy={true} smooth={true} offset={-100} duration={500}>Home</Link>
+                    <Link to="about" spy={true} smooth={true} offset={-100} duration={500}>About</Link>
+                    <Link to="skillsContainer" spy={true} smooth={true} offset={-150} duration={500}>Skills</Link>
+                    <Link to="projectContainer" spy={true} smooth={true} offset={-100} duration={500}>Projects</Link>
+                    <Link to="FooterContainer" spy={true} smooth={true} offset={100} duration={500}>Contact</Link>
                 </div>
             </div>
         </div>

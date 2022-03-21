@@ -4,6 +4,7 @@ import WebApp from '../ProjectComponent/WebApp/WebApp'
 import Dashboard from '../ProjectComponent/Dashboard/Dashboard'
 import LandingPage from '../ProjectComponent/LandingPage/LandingPage'
 import Wireframe from '../ProjectComponent/Wireframe/Wireframe'
+import Button from '@mui/material/Button';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -28,6 +29,7 @@ function MyProject() {
             <div className="project">
                 <div className="projectTopic">
                     <span>Web Application</span>
+                    <Button variant="contained">Preview</Button>
                 </div>
                 <div className="projectDetail">
                     <div data-aos="fade-in" data-aos-offset="200">
@@ -38,6 +40,7 @@ function MyProject() {
             <div className="project">
                 <div className="projectTopic">
                     <span>Dashboard</span>
+                    <Button variant="contained">Preview</Button>
                 </div>
                 <div className="projectDetail">
                     <div data-aos="fade-in" data-aos-offset="500">
@@ -48,6 +51,7 @@ function MyProject() {
             <div className="project">
                 <div className="projectTopic">
                     <span>Landing Page</span>
+                    <Button variant="contained">Preview</Button>
                 </div>
                 <div className="projectDetail">
                     <div data-aos="fade-in" data-aos-offset="500">
@@ -58,6 +62,7 @@ function MyProject() {
             <div className="project">
                 <div className="projectTopic">
                     <span>Wireframe</span>
+                    <Button variant="contained">Preview</Button>
                 </div>
                 <div className="projectDetail">
                     <div data-aos="fade-in" data-aos-offset="500">

@@ -14,11 +14,12 @@ label {
 }
 
 input {
-    width: 95%;
+    width: 100%;
     display: block;
     border: none;
     padding: 15px;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 
 input:focus {
@@ -33,6 +34,7 @@ input:focus {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .sendBtn:enabled{
