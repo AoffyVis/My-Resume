@@ -44,6 +44,21 @@
     font-size: 5vw;
 }
 
+.downArrow:hover {
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    animation: pulse 1s;
+}
+
+@keyframes pulse {
+    0% { 
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: rgb(0, 0, 0);
+    }
+    50% { transform: scale(2.5); }
+    100% { transform: scale(2); }
+}
+
 a:link { text-decoration: none; }
 
 
