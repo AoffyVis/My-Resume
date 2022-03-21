@@ -1,7 +1,7 @@
 import './Header.css';
 import Typewriter from 'typewriter-effect';
 import { Link } from "react-scroll";
-import MyImage from '../assets/profile-pic-4.png';
+import MyImage from '../assets/me.jpg';
 
 function Header() {
   return (

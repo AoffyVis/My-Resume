@@ -56,32 +56,32 @@ a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
 .header__img {
-    width: 30%;
+    width: 40%;
     height: auto;
+    margin-left: 50%;
     aspect-ratio: 1/1;
-    border-radius: 20% 0 0 0;
+    border-radius: 20% 0 20% 0;
     background: linear-gradient(#a7c6ebbd, transparent);
     display: grid;
-    margin-left: 70%;
 }
 
 .header__img__box {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .header__img__box img{
-    width: 100%;
-    position: relative;
+    width: 95%;
+    border-radius: 20% 0 20% 0;
 }
 
 @media only screen and (max-width: 1024px) {
-    .App-header {
-        min-height: 80vh;
-    }
+
 }
 
 @media only screen and (max-width: 768px) {
+    
     .App-header h2, .downArrow {
         font-size: 8vw;
     }
@@ -98,6 +98,10 @@ a:active { text-decoration: none; }
 }
 
 @media only screen and (max-width: 600px) {
+
+    .App-header {
+        min-height: 80vh;
+    }
 
     .typeWritter {
         font-size: 1rem;
