@@ -21,8 +21,8 @@ function About() {
             on your side by freeing you of the burdens of carrying out repetitive tasks through automative
             processes. <br /><br />
             For the front-end I usually work with Javascript, either standalone or including popular frameworks like
-            ReactJS, EJS. I also make the web pretty by using CSS and, whenever needed, any of their
-            friends: Bootstrap or etc.
+            ReactJS, EJS. I also make the web pretty by using CSS preprocessors and, any of their
+            friends.
             <br /><br />
             For the back-end I also work with Javascript (NodeJS, ExpressJS). But, of course,
             I also have knowledge of computer programming languages such as PHP, MSSQL, and hardware engineering

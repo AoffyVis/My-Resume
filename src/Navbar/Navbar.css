@@ -111,8 +111,6 @@ a {
     #mainListDiv ul .link{
         padding-left: 3rem;
         font-weight: 600;
-        color: var(--mobile-menu-text);
-        -webkit-text-stroke-width: 0.5px;
-        -webkit-text-stroke-color: #ffffff;
+        color: #ffffff;
     }
 }

@@ -2,27 +2,22 @@
 	--main-color: #00c4e6;
     --underline-color: #ff8800;
     --underline-color-hover: #ff9f31;
+    --article-color: #01135f;
 }
 
 .about {
     min-height: 80vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: .5rem;
+    display: flex;
+    align-items: center;
+    grid-gap: 1rem;
     margin: 0 auto;
-    padding: 5rem;
+    padding: .5rem;
     align-items: center;
     background: linear-gradient(
-        to left, 
-        rgb(0, 49, 112) 60%,
-        rgb(133, 182, 255) 100%);
-    /* background-color: #282c34; */
-    /* background: linear-gradient(
         to bottom, 
-        rgba(255, 255, 255, 0.1) 85%,
-        rgba(255, 255, 255, 0.9) 100%),
-        url("../../public/frontend-bg.png"); */
-        /* url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700345338.jpg"); */
+        rgba(221, 221, 221, 0.4) 100%,
+        #ffffff 100%),
+        url("https://wallpaperaccess.com/full/289374.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -30,14 +25,17 @@
 }
 
 .about__me {
-    width: 60%;
+    width: 30%;
     height: auto;
     margin: 0 auto;
+    position: relative;
     aspect-ratio: 1/1;
     border-radius: 20%;
-    background: linear-gradient(#cccfd1, transparent);
+    background: linear-gradient(rgba(137, 170, 221, 0.5), transparent);
     display: grid;
     place-items: center;
+    margin-left: 5rem;
+    z-index: 1;
 } 
 
 .about_me_IMG img{
@@ -55,13 +53,13 @@
 }
 
 .myDesc {
-    width: 100%;
-    margin: 0 auto;
+    width: 60%;
+    height: auto;
+    position: absolute;
+    right: 50px;
     font-size: 2vw;
     color: #f4f4f4;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10% 10% 0 0;
-    padding: 2rem;
+    padding: 2rem ;
     box-sizing: border-box;
 }
 
@@ -78,6 +76,9 @@
 
 .myDesc p{
     font-size: calc(10px + 1vmin);
+    font-weight: 500;
+    font-family: 'Prompt';
+    color: var(--article-color);
 }
 
 .btn {
@@ -101,21 +102,36 @@
 
 @media only screen and (max-width: 1024px) {
     .about__me {
-        width: 80%;
+        margin-left: 3rem;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .about {
+        padding: 2rem 0;
         display: block;
+        justify-content: center;
     }
 
     .about__me {
-        width: 50%;
+        width: 45%;
+        margin: 0 auto;
     }
 
     .about_me_IMG img{
         transform: none;
         transition: none;
+    }
+
+    .myDesc {  
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        right: 0;
+        margin-top: 1rem;
+    }
+
+    .myDesc h2 { 
+        font-size: 8vw; 
     }
 }

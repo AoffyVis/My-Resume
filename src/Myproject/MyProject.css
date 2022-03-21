@@ -31,8 +31,6 @@
 .gridProject {
     margin: 0 auto;
     display: block;
-    /* grid-template-columns: repeat(4,1fr);
-    grid-gap: 1rem; */
     align-items: center;
 }
 

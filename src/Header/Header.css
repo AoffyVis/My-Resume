@@ -1,11 +1,4 @@
 .App-header {
-    /* background-image: url('../../public/bg.jpg'); */
-    /* background: linear-gradient(
-        to bottom, 
-        #0c0c0c 20%,
-        #4e4e4e 60%,
-        transparent 100%),
-        url('../../public/frontend-bg.png'); */
     background-image: url('https://www.egeniq.nl/sites/default/files/2020-06/frontend_webdeveloper.jpg');
     background-size: cover;
     background-position: center center;
@@ -24,11 +17,13 @@
     position: absolute;
     text-align: left;
     margin-right: 40%;
+    z-index: 2;
 }
 
 .header__detail p {
-    font-size: 2vw;
+    font-size: calc(10px + 2vmin);
     color: #ff8800;
+    font-weight: 600;
     line-height: 0px;
 }
 
@@ -36,8 +31,6 @@
     background-clip: text;
 	-webkit-background-clip: text;
 	color: #ffffff;
-	/* background-image: url('https://wallpaper.dog/large/11032432.jpg'); */
-    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ63HzSjLWxnn9QyaOfVOxXzw6lgMBpfihNSA&usqp=CAU'); */
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
 }
@@ -46,8 +39,6 @@
     background-clip: text;
 	-webkit-background-clip: text;
     color: #ff8800;
-	/* color: transparent;
-	background-image: url('https://wallpaper.dog/large/11032432.jpg'); */
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
     font-size: 5vw;
@@ -71,7 +62,6 @@ a:active { text-decoration: none; }
     border-radius: 20% 0 0 0;
     background: linear-gradient(#a7c6ebbd, transparent);
     display: grid;
-    margin-top: 5%;
     margin-left: 70%;
 }
 
@@ -87,17 +77,33 @@ a:active { text-decoration: none; }
 
 @media only screen and (max-width: 1024px) {
     .App-header {
-        min-height: 65vh;
+        min-height: 80vh;
     }
 }
 
 @media only screen and (max-width: 768px) {
-
-    .App-header {
-        min-height: 65vh;
-    }
-
     .App-header h2, .downArrow {
         font-size: 8vw;
+    }
+
+    .header__detail {
+        margin-right: 20%;
+    }
+
+    .header__img {
+        width: 50%;
+        margin-left: 50%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+
+    .typeWritter {
+        font-size: 1rem;
+    }
+
+    .downArrow {
+        font-size: calc(50px + 2vmin);
     }
 }
