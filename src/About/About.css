@@ -6,22 +6,29 @@
 }
 
 .about {
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    grid-gap: 1rem;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
-    padding: .5rem;
+    display: block;
     align-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
     background: linear-gradient(
         to bottom, 
-        rgba(221, 221, 221, 0.4) 100%,
-        #ffffff 100%),
-        url("https://wallpaperaccess.com/full/289374.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+        rgb(197, 197, 197, 0.2) 95%,
+        #ffffff 100%);
     font-size: 2vw;
+    font-family: 'Prompt';
+}
+
+.about__me__section {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about__me {
@@ -30,8 +37,8 @@
     margin: 0 auto;
     position: relative;
     aspect-ratio: 1/1;
-    border-radius: 20%;
-    background: linear-gradient(rgba(137, 170, 221, 0.5), transparent);
+    border-radius: 20px;
+    background: linear-gradient(rgba(197, 197, 197, 0.5), transparent);
     display: grid;
     place-items: center;
     margin-left: 5rem;
@@ -39,11 +46,11 @@
 } 
 
 .about_me_IMG img{
-    width: 100%;
+    width: 90%;
     height: auto;
     margin: 0 auto;
-    border-radius: 20%;
-    transform: rotate(10deg);
+    border-radius: 10px 50px 10px 50px;
+    transform: rotate(5deg);
     transition: ease-in .4s;
 }
 
@@ -55,21 +62,27 @@
 .myDesc {
     width: 60%;
     height: auto;
-    position: absolute;
+    position: relative;
     right: 50px;
     font-size: 2vw;
     color: #f4f4f4;
+    background-image: url('../../public/frontend-bg.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    border-radius: 50px 10px 50px 10px;
     padding: 2rem ;
     box-sizing: border-box;
 }
 
 .myDesc h2{
     text-transform: uppercase;
-    background-clip: text;
+    /* background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
 	background-image: url('https://wallpaper.dog/large/11032432.jpg');
-    -webkit-text-stroke: 1px #ffffff;
+    -webkit-text-stroke: 1px #ffffff; */
     text-decoration: underline;
     text-decoration-color: var(--underline-color);
 }
@@ -77,8 +90,47 @@
 .myDesc p{
     font-size: calc(10px + 1vmin);
     font-weight: 500;
-    font-family: 'Prompt';
-    color: var(--article-color);
+    color: #ffffff;
+}
+
+.about__portfolio__section {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #01135f;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.portfolio__item {
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    background: rgba(198, 207, 219, 0.5);
+    box-shadow: 0 0 10px 10px rgb(198, 207, 219); /* outer cyan */
+    border-radius: 30% 30% 0 0;
+    padding-bottom: 2rem;
+}
+
+.icon {
+    width: 15%;
+    margin-top: 1rem;
+}
+
+.portfolio__item p {
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.portfolio__item span {
+    font-size: 1.5vw;
 }
 
 .btn {
@@ -99,15 +151,32 @@
     background-color: var(--underline-color-hover);
 }
 
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1440px) {
     .about__me {
-        margin-left: 3rem;
+        width: 35%;
+        margin-left: 1rem;
+    } 
+    .myDesc {
+        right: 20px;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .about {
+
+@media only screen and (max-width: 1024px) {
+    .about__me {
+        margin-left: .5rem;
+    }
+    .myDesc {
+        right: 10px;
+    }
+
+    .about__portfolio__section {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 912px) {
+    .about__me__section {
         padding: 2rem 0;
         display: block;
         justify-content: center;
@@ -134,4 +203,65 @@
     .myDesc h2 { 
         font-size: 8vw; 
     }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .about__portfolio__section {
+        margin-top: 0;
+    }
+
+    .icon {
+        width: 20%;
+        margin-top: 1rem;
+    }
+    
+    .portfolio__item p {
+        font-size: 3vw;
+    }
+    
+    .portfolio__item span {
+        font-size: 2vw;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+
+    .about__portfolio__section {
+        display: block;
+    }
+
+    .portfolio__item {
+        width: 100%;
+        display: block;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+
+    .icon {
+        width: 10%;
+    }
+    
+    .portfolio__item p {
+        font-size: 5vw;
+    }
+    
+    .portfolio__item span {
+        font-size: 4vw;
+    }
+
+    /*Disable AOS*/
+    [data-aos] {
+        pointer-events: auto !important;
+    }
+
+    html:not(.no-js) [data-aos^=zoom][data-aos^=zoom] {
+      opacity: 1 !important;
+    }
+
+    html:not(.no-js) [data-aos=zoom-in] {
+      transform: none !important;
+    }
+
 }

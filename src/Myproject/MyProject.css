@@ -8,9 +8,13 @@
     display: block;
     background: linear-gradient(
         to top, 
-        rgba(221, 221, 221, 0.4) 80%,
+        rgba(221, 221, 221, 0.2) 95%,
         #ffffff 100%),
-    url("https://i.pinimg.com/originals/46/1d/25/461d254f8563f8945ce3a385f289df17.jpg") no-repeat;
+        linear-gradient(
+        to top, 
+        rgba(221, 221, 221, 0.2) 10%,
+        rgba(221, 221, 221, 0.2) 100%),
+    url("https://i.pinimg.com/originals/46/1d/25/461d254f8563f8945ce3a385f289df17.jpg");
     background-size: cover;
     background-clip: border-box;
     font-size: 2vw;
@@ -41,43 +45,78 @@
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
- }
-
- .project:nth-child(2),.project:nth-child(4) {
-     flex-direction: row-reverse;
- }
-
- .projectTopic {
-     width: 100%;
-     height: auto;
-     margin: 0 auto;
-     display: flex;
-     flex-direction: column;
- }
-
- .projectTopic span {
-    font-size: 1.2em;
-    font-family: 'Prompt';
-    font-weight: 600;
-    white-space: nowrap;
-    text-transform: uppercase;
-    background: linear-gradient(to right, #330867 0%, #30CFD0 100%);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 1rem;
- }
-
- .projectTopic button {
-    width: 50%;
-    margin: 0 auto;
-    font-weight: 600;
- }
-
-
- .projectDetail {
+}
+.project:nth-child(2),.project:nth-child(4) {
+    flex-direction: row-reverse;
+}
+.projectTopic {
     width: 100%;
     height: auto;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.projectTopic span {
+   font-size: 1.2em;
+   font-family: 'Prompt';
+   font-weight: 600;
+   white-space: nowrap;
+   text-transform: uppercase;
+   background: linear-gradient(to right, #330867 0%, #30CFD0 100%);
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   margin-bottom: 1rem;
+}
+.projectTopic button {
+   width: 50%;
+   margin: 0 auto;
+   font-weight: 600;
+}
+.projectDetail {
+   width: 100%;
+   height: auto;
+   margin: 0 auto;
+}
+.projectDetail:before {
+   content: '';
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+.project:nth-child(1) .projectDetail div:nth-child(1)>img:nth-child(1):hover,
+.project:nth-child(3) .projectDetail div:nth-child(1)>img:nth-child(1):hover {
+   width: 100%;
+   position:relative;
+   top:-50%;
+   left:-50%;
+   transform: scale(1.8);
+   -webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+   -ms-transition: all 1s ease;
+   transition: all 1s ease;
+   -webkit-transition-delay: .2s;
+   -moz-transition-delay: .2s;
+   -ms-transition-delay: .2s;
+   transition-delay: .2s; 
+   z-index: 100;
+}
+.project:nth-child(2) .projectDetail:nth-child(2) div:nth-child(1)>img:nth-child(1):hover,
+.project:nth-child(4) .projectDetail:nth-child(2) div:nth-child(1)>img:nth-child(1):hover {
+   width: 100%;
+   position:relative;
+   top:-50%;
+   left: 50%;
+   transform: scale(1.8);
+   -webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+   -ms-transition: all 1s ease;
+   transition: all 1s ease;
+   -webkit-transition-delay: .2s;
+   -moz-transition-delay: .2s;
+   -ms-transition-delay: .2s;
+   transition-delay: .2s; 
+   transition-delay: .2s; 
+   z-index: 100;
 }
 
  @media only screen and (max-width: 1045px) {
@@ -107,6 +146,19 @@
     .projectTopic span {
         font-size: 4vw;
     }
+
+    .projectDetail div:nth-child(1)>img:nth-child(1):hover {
+        width: 100%;
+        position:relative;
+        top:0;
+        left:0;
+        transform: none;
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        transition: none;
+        z-index: 100;
+    }
  }
 
  @media only screen and (max-width: 670px) {
@@ -131,7 +183,7 @@
 
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 600px) {
 
     .project {
         display: block;
@@ -143,6 +195,19 @@
 
     .projectTopic span {
         font-size: 5vw;
+    }
+
+    /*Disable AOS*/
+    [data-aos] {
+        pointer-events: auto !important;
+    }
+
+    html:not(.no-js) [data-aos^=slide][data-aos^=slide] {
+      opacity: 1 !important;
+    }
+
+    html:not(.no-js) [data-aos=slide-right], html:not(.no-js) [data-aos=slide-left] {
+      transform: none !important;
     }
 
 }
