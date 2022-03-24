@@ -14,7 +14,7 @@ function About() {
     Aos.init({ 
         duration: 1500,
         disable: function () {
-            var maxWidth = 600;
+            var maxWidth = 1024;
             return window.innerWidth < maxWidth;
         }
     });

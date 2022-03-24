@@ -209,6 +209,31 @@
         font-size: 2vw;
     }
 
+    /*Disable AOS*/
+    [data-aos] {
+        pointer-events: auto !important;
+    }
+
+    html:not(.no-js) [data-aos^=zoom][data-aos^=zoom] {
+      opacity: 1 !important;
+    }
+
+    html:not(.no-js) [data-aos=zoom-in] {
+        -webkit-transform: none !important;
+        -ms-transform: none !important;
+        transform: none !important;
+    }
+
+    html:not(.no-js) [data-aos^=fade][data-aos^=fade] {
+        opacity: 1 !important;
+    }
+  
+    html:not(.no-js) [data-aos=fade-left] {
+        -webkit-transform: none !important;
+        -ms-transform: none !important;
+        transform: none !important;
+    }
+
 }
 
 @media only screen and (max-width: 912px) {

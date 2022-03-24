@@ -110,6 +110,29 @@
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    /*Disable AOS*/
+    [data-aos] {
+        pointer-events: auto !important;
+    }
+
+    html:not(.no-js) [data-aos^=slide][data-aos^=slide] {
+      opacity: 1 !important;
+    }
+
+    html:not(.no-js) [data-aos=slide-right] {
+        -webkit-transform: none !important;
+        -ms-transform: none !important;
+        transform: none !important;
+    }
+
+    html:not(.no-js) [data-aos=slide-left] {
+        -webkit-transform: none !important;
+        -ms-transform: none !important;
+        transform: none !important;
+    }
+}
+
 @media only screen and (max-width: 768px) {
 
    .project {
