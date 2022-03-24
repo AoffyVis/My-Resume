@@ -1,4 +1,5 @@
 import './Wireframe.css';
+import XD from "../../assets/icon/xd-logo.png";
 
 function Wireframe() {
     return (
@@ -6,7 +7,7 @@ function Wireframe() {
         <div className='Wireframe'>
           <img src="/wireframe/webApp.png" alt="wireframe"/>
           <div className='WireframeDetail'>
-            <img src="/xd-logo.png" alt="html"/>
+            <img src={XD} alt="XD"/>
           </div>
         </div>
     </div>

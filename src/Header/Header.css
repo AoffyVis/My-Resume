@@ -1,3 +1,7 @@
+:root {
+    --orange-color: rgb(255, 136, 0);
+}
+
 .App-header {
     background-image: url('https://www.egeniq.nl/sites/default/files/2020-06/frontend_webdeveloper.jpg');
     background-size: cover;
@@ -22,7 +26,7 @@
 
 .header__detail p {
     font-size: calc(10px + 2vmin);
-    color: #ff8800;
+    color: var(--orange-color);
     font-weight: 600;
     line-height: 0px;
 }
@@ -31,32 +35,36 @@
     background-clip: text;
 	-webkit-background-clip: text;
 	color: #ffffff;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
-.downArrow{
+.scroll-txt {
+    display: flex;
+    align-items: center;
     background-clip: text;
 	-webkit-background-clip: text;
-    color: #ff8800;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(0, 0, 0);
-    font-size: 5vw;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 2vw;
+    font-weight: 600;
+    animation: pulse 2s infinite;
+    -webkit-animation: pulse 3s infinite;
+    padding: 5rem 0;
 }
 
-.downArrow:hover {
-    -webkit-text-stroke-width: 5px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
-    animation: pulse 1s;
+.downArrow {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2)
 }
+
 
 @keyframes pulse {
     0% { 
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: rgb(0, 0, 0);
+        color: rgba(255, 255, 255, 0.1);
     }
-    50% { transform: scale(2.5); }
-    100% { transform: scale(2); }
+    50% { color: rgb(255, 255, 255); }
+    100% { color: rgba(255, 255, 255, 0.1); }
 }
 
 a:link { text-decoration: none; }
@@ -76,6 +84,8 @@ a:active { text-decoration: none; }
     margin-left: 50%;
     aspect-ratio: 1/1;
     border-radius: 20% 0 20% 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#a7c6ebbd), to(transparent));
+    background: -o-linear-gradient(#a7c6ebbd, transparent);
     background: linear-gradient(#a7c6ebbd, transparent);
     display: grid;
 }
@@ -93,21 +103,33 @@ a:active { text-decoration: none; }
 
 @media only screen and (max-width: 1024px) {
 
+    .header__detail h2 {
+        font-size: 6vw;
+    }
+    
+    .scroll-txt {
+        font-size: 3vw;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
     
     .App-header h2, .downArrow {
-        font-size: 8vw;
+        font-size: 7vw;
     }
 
     .header__detail {
-        margin-right: 20%;
+        margin-right: 25%;
     }
 
     .header__img {
         width: 50%;
         margin-left: 50%;
+    }
+
+    .scroll-txt {
+        font-size: 3vw;
     }
     
 }
@@ -115,14 +137,21 @@ a:active { text-decoration: none; }
 @media only screen and (max-width: 600px) {
 
     .App-header {
-        min-height: 80vh;
+        min-height: 65vh;
     }
 
     .typeWritter {
-        font-size: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .scroll-txt {
+        font-size: 4vw;
+        padding: 1rem 0;
     }
 
     .downArrow {
-        font-size: calc(50px + 2vmin);
+        transform: scale(2);
+        -webkit-transform: scale(2);
+        -ms-transform: scale(2)
     }
 }

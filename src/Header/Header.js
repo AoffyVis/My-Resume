@@ -1,5 +1,6 @@
 import './Header.css';
 import Typewriter from 'typewriter-effect';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { Link } from "react-scroll";
 import MyImage from '../assets/me.jpg';
 
@@ -20,7 +21,8 @@ function Header() {
             }}
           />
         </div>
-        <Link to="about" spy={true} smooth={true} offset={-20} duration={500}><span className="downArrow">⮋</span></Link>
+        {/* <Link to="about" spy={true} smooth={true} offset={-20} duration={500}><span className="downArrow">⮋</span></Link> */}
+        <Link to="about" spy={true} smooth={true} offset={-20} duration={500}><span className="scroll-txt">Scroll down <ArrowDropDownIcon className='downArrow'/></span></Link>
       </div>
       <div className='header__img'>
         <div className='header__img__box'>

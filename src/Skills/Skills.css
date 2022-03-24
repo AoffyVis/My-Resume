@@ -7,48 +7,63 @@
     width: 100%;
     margin: 0 auto;
     display: block;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
-    background: linear-gradient(
-        to top, 
-        rgba(221, 221, 221, 0.2) 80%,
-        #ffffff 100%),
-        linear-gradient(
-        to bottom, 
-        rgba(221, 221, 221, 0.2) 90%,
-        rgb(255, 255, 255) 100%),
-        url("https://i.pinimg.com/originals/46/1d/25/461d254f8563f8945ce3a385f289df17.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    padding-top: 2rem;
-    font-size: 2vw;
 }
 
 .skillsContainer h2 {
+    font-size: 5em;
     text-transform: uppercase;
     background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
 	background-image: url('https://wallpaper.dog/large/11032432.jpg');
     text-decoration: underline;
+    -webkit-text-decoration-color: var(--underline-color);
     text-decoration-color: var(--underline-color);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 1rem 0;
 }
 
 .gridFrontSkills {
     width: 80%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    margin-top: 4rem;
 }
 
 .gridBackEndSkill {
     width: 80%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -82,10 +97,23 @@
     font-weight: 600;
 }
 
+@media only screen and (max-width: 1024px) {
+
+    .skillsContainer h2 {
+        text-align: center;
+        font-size: 5em;
+    }
+
+    .gridFrontSkills, 
+    .gridBackEndSkill {
+        width: 90%;
+    }
+}
+
 @media only screen and (max-width: 768px) {
 
     .skillsContainer h2 {
-        font-size: 8vw;
+        font-size: 5rem;
     }
 
     .gridFrontSkills .Skill p:last-child{
@@ -99,7 +127,17 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+    .skillsContainer h2 {
+        font-size: 12vw;
+    }
+
     .gridFrontSkills, .gridBackEndSkill {
-        grid-template-columns: repeat(2,1fr);
+        -ms-flex-wrap: wrap;     
+        flex-wrap: wrap;
+    }
+
+    .Skill {
+        max-width: 50%;
     }
 }

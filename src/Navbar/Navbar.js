@@ -12,7 +12,7 @@ function Navbar() {
     <nav className="nav">
       <div className="container">
         <div className="logo">
-          <Link to="header" spy={true} smooth={true} offset={100} duration={500}><CodeIcon /> Jirawat K.</Link>
+          <Link className="logo-nav" to="header" spy={true} smooth={true} offset={100} duration={500}><CodeIcon /> Jirawat K.</Link>
         </div>
         <div id={click ? "mainListDiv" : "mobile-menu"} className="main_list">
           <ul className="navlinks">

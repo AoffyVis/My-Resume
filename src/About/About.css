@@ -1,7 +1,7 @@
 :root {
 	--main-color: #00c4e6;
-    --underline-color: #ff8800;
-    --underline-color-hover: #ff9f31;
+    --orange-color: rgb(255, 136, 0);
+    --orange-color-hover: rgb(255, 168, 68);
     --article-color: #01135f;
 }
 
@@ -10,10 +10,22 @@
     height: auto;
     margin: 0 auto;
     display: block;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0;
+    background: -webkit-gradient(
+        linear, 
+        left top, left bottom, 
+        color-stop(95%, rgb(197, 197, 197, 0.2)),
+        to(#ffffff));
+    background: -o-linear-gradient(
+        top, 
+        rgb(197, 197, 197, 0.2) 95%,
+        #ffffff 100%);
     background: linear-gradient(
         to bottom, 
         rgb(197, 197, 197, 0.2) 95%,
@@ -23,114 +35,78 @@
 }
 
 .about__me__section {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.about__me {
-    width: 30%;
-    height: auto;
-    margin: 0 auto;
-    position: relative;
-    aspect-ratio: 1/1;
-    border-radius: 20px;
-    background: linear-gradient(rgba(197, 197, 197, 0.5), transparent);
-    display: grid;
-    place-items: center;
-    margin-left: 5rem;
-    z-index: 1;
-} 
-
-.about_me_IMG img{
-    width: 90%;
-    height: auto;
-    margin: 0 auto;
-    border-radius: 10px 50px 10px 50px;
-    transform: rotate(5deg);
-    transition: ease-in .4s;
-}
-
-.about_me_IMG img:hover {
-    transform: rotate(0deg);
-    animation: ease-in 2s;
-}
-
-.myDesc {
-    width: 60%;
-    height: auto;
-    position: relative;
-    right: 50px;
-    font-size: 2vw;
-    color: #f4f4f4;
-    background-image: url('../../public/frontend-bg.png');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    border-radius: 50px 10px 50px 10px;
-    padding: 2rem ;
-    box-sizing: border-box;
-}
-
-.myDesc h2{
-    text-transform: uppercase;
-    /* background-clip: text;
-	-webkit-background-clip: text;
-	color: transparent;
-	background-image: url('https://wallpaper.dog/large/11032432.jpg');
-    -webkit-text-stroke: 1px #ffffff; */
-    text-decoration: underline;
-    text-decoration-color: var(--underline-color);
-}
-
-.myDesc p{
-    font-size: calc(10px + 1vmin);
-    font-weight: 500;
-    color: #ffffff;
-}
-
-.about__portfolio__section {
     width: 80%;
     height: auto;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
-    color: #01135f;
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: 2rem;
 }
 
-.portfolio__item {
-    width: 30%;
+.about__me {
+    width: 100%;
     height: auto;
-    margin: 0 auto;
-    display: block;
-    justify-content: center;
-    background: rgba(198, 207, 219, 0.5);
-    box-shadow: 0 0 10px 10px rgb(198, 207, 219); /* outer cyan */
-    border-radius: 30% 30% 0 0;
-    padding-bottom: 2rem;
-}
-
-.icon {
-    width: 15%;
-    margin-top: 1rem;
-}
-
-.portfolio__item p {
+    position: relative;
     font-size: 2vw;
-    text-transform: uppercase;
-    font-weight: 600;
+    color: #f4f4f4;
+    background: rgba(0, 24, 56, 0.5);
+    border-radius: 50px 10px 50px 10px;
+    padding: 2rem ;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.portfolio__item span {
-    font-size: 1.5vw;
+.about__me {
+    position: relative;
+}
+
+.about__me::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; 
+    height: 100%;
+    background-image: url('../assets/profile-pic-1.jpg');
+    background-size: cover;
+    -webkit-filter: blur(5px) opacity(50%);
+    -moz-filter: blur(5px) opacity(50%);
+    -o-filter: blur(5px) opacity(50%);
+    -ms-filter: blur(5px) opacity(50%);
+    filter: blur(5px) opacity(50%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50px 10px 50px 10px;
+    padding: 2rem ;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+.about__me .about_me_content{
+    position: relative;
+    z-index: 1;
+}
+
+.about__me h2{
+    text-transform: uppercase;
+    text-decoration: underline;
+    -webkit-text-decoration-color: var(--orange-color);
+    text-decoration-color: var(--orange-color);
+}
+
+.about__me p{
+    font-size: 1vw;
+    font-weight: 500;
+    color: #ffffff;
+    -webkit-text-stroke: .2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
 .btn {
@@ -142,113 +118,135 @@
     font-weight: 600;
     text-transform: uppercase;
     color: #ffffff;
-    background-color: var(--underline-color);
+    background-color: var(--orange-color);
     border-radius: 10px;
     padding: 10px 20px;
 }
 
 .btn a:hover {
-    background-color: var(--underline-color-hover);
+    background-color: var(--orange-color-hover);
+}
+
+.about__portfolio__section {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: inline-block;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #01135f;
+}
+
+.portfolio__item {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: rgba(198, 207, 219, 0.5);
+    -webkit-box-shadow: 0 0 5px 5px rgb(198, 207, 219);
+    box-shadow: 0 0 5px 5px rgb(198, 207, 219); /* outer cyan */
+    border-radius: 50px 10px 50px 10px;
+    margin: 50px 0;
+    padding: 15px;
+}
+
+.portfolio__item__header, 
+.portfolio__item__content {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.icon {
+    width: 15%;
+}
+
+.portfolio__item__header p {
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+}
+
+.portfolio__item__content p {
+    text-align: right;
+    font-size: 1vw;
+    white-space: nowrap;
+    margin-right: 20px;
 }
 
 @media only screen and (max-width: 1440px) {
-    .about__me {
-        width: 35%;
-        margin-left: 1rem;
-    } 
-    .myDesc {
-        right: 20px;
+
+    .about__me__section {
+        width: 90%;
     }
+
 }
 
 
 @media only screen and (max-width: 1024px) {
-    .about__me {
-        margin-left: .5rem;
-    }
-    .myDesc {
-        right: 10px;
+
+    .about__me__section {
+        display: block;
+        margin-top: 2rem;
     }
 
-    .about__portfolio__section {
-        width: 90%;
+    .about__me h2 { font-size: 3.5em; }
+
+    .about__me p, .portfolio__item__content p {
+        font-size: 2vw;
     }
+
 }
 
 @media only screen and (max-width: 912px) {
-    .about__me__section {
-        padding: 2rem 0;
-        display: block;
-        justify-content: center;
-    }
-
-    .about__me {
-        width: 45%;
-        margin: 0 auto;
-    }
-
-    .about_me_IMG img{
-        transform: none;
-        transition: none;
-    }
-
-    .myDesc {  
-        width: 90%;
-        margin: 0 auto;
-        position: relative;
-        right: 0;
-        margin-top: 1rem;
-    }
-
-    .myDesc h2 { 
-        font-size: 8vw; 
+    .portfolio__item {
+        padding: 0;
     }
 }
 
 @media only screen and (max-width: 768px) {
 
-    .about__portfolio__section {
-        margin-top: 0;
-    }
-
-    .icon {
-        width: 20%;
-        margin-top: 1rem;
-    }
-    
-    .portfolio__item p {
-        font-size: 3vw;
-    }
-    
-    .portfolio__item span {
-        font-size: 2vw;
-    }
     
 }
 
 @media only screen and (max-width: 600px) {
 
-    .about__portfolio__section {
-        display: block;
+    .about__me h2 { font-size: 4em; }
+
+    .about__me p, .portfolio__item__content p {
+        font-size: 2.5vw;
     }
 
     .portfolio__item {
-        width: 100%;
-        display: block;
-        border-radius: 10px;
-        margin-bottom: 2rem;
+        border-radius: 30px 10px 30px 10px;
+        margin: 20px 0;
+    }
+
+    .portfolio__item__header {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 
     .icon {
-        width: 10%;
+        width: 20%;
     }
     
-    .portfolio__item p {
-        font-size: 5vw;
-    }
-    
-    .portfolio__item span {
-        font-size: 4vw;
+    .portfolio__item__header p {
+        font-size: 3vw;
     }
 
     /*Disable AOS*/
@@ -261,7 +259,9 @@
     }
 
     html:not(.no-js) [data-aos=zoom-in] {
-      transform: none !important;
+        -webkit-transform: none !important;
+        -ms-transform: none !important;
+        transform: none !important;
     }
 
 }

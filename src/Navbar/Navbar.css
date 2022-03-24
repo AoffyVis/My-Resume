@@ -16,6 +16,7 @@ a {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 9999;
+    font-family: 'Prompt';
 }
 
 .nav div.logo {
@@ -23,6 +24,11 @@ a {
     width: auto;
     height: auto;
     padding-left: 3rem;
+}
+
+.nav div.logo .logo-nav {
+    display: flex;
+    align-items: center;
 }
 
 .nav div.logo a {
@@ -81,10 +87,21 @@ a {
     color: var(--main-color);
 }
 
+@media only screen and (max-width: 810px) {
+
+    .nav div.main_list {
+        margin-right: 20px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
 
     .nav {
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .nav div.logo {
+        padding-left: 1rem;
     }
 
     .nav div.main_list ul .link{
@@ -105,7 +122,7 @@ a {
         top: 65px;
         width: 100%;
         height: 300px;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(0, 0, 0, 0.7);
     }
 
     #mainListDiv ul .link{
