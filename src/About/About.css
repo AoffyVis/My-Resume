@@ -17,7 +17,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     align-items: center;
-    background: -webkit-gradient(
+    /* background: -webkit-gradient(
         linear, 
         left top, left bottom, 
         color-stop(95%, rgb(197, 197, 197, 0.2)),
@@ -29,9 +29,9 @@
     background: linear-gradient(
         to bottom, 
         rgb(197, 197, 197, 0.2) 95%,
-        #ffffff 100%);
+        #ffffff 100%); */
     font-size: 2vw;
-    font-family: 'Prompt';
+    font-family: 'Prompt', sans-serif;
 }
 
 .about__me__section {
@@ -56,7 +56,7 @@
     position: relative;
     font-size: 2vw;
     color: #f4f4f4;
-    background: rgba(0, 24, 56, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     border-radius: 50px 10px 50px 10px;
     padding: 2rem ;
     -webkit-box-sizing: border-box;
@@ -154,10 +154,10 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background: rgba(198, 207, 219, 0.5);
-    -webkit-box-shadow: 0 0 5px 5px rgb(198, 207, 219);
-    box-shadow: 0 0 5px 5px rgb(198, 207, 219); /* outer cyan */
-    border-radius: 50px 10px 50px 10px;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: 0 0 3px 3px rgb(255, 255, 255);
+    box-shadow: 0 0 3px 3px rgb(255, 255, 255); /* outer */
+    border-radius: 30px 10px 30px 10px;
     margin: 50px 0;
     padding: 15px;
 }
@@ -183,6 +183,7 @@
 .portfolio__item__content p {
     text-align: right;
     font-size: 1vw;
+    font-weight: 600;
     white-space: nowrap;
     margin-right: 20px;
 }

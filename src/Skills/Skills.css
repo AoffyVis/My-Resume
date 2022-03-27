@@ -13,15 +13,17 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    font-family: 'Prompt', sans-serif;
 }
 
 .skillsContainer h2 {
     font-size: 5em;
     text-transform: uppercase;
-    background-clip: text;
+    color: rgb(255, 255, 255);
+    /* background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
-	background-image: url('https://wallpaper.dog/large/11032432.jpg');
+	background-image: url('https://wallpaper.dog/large/11032432.jpg'); */
     text-decoration: underline;
     -webkit-text-decoration-color: var(--underline-color);
     text-decoration-color: var(--underline-color);
@@ -30,25 +32,7 @@
     margin: 1rem 0;
 }
 
-.gridFrontSkills {
-    width: 80%;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-top: 4rem;
-}
-
+.gridFrontSkills,
 .gridBackEndSkill {
     width: 80%;
     margin: 0 auto;
@@ -65,6 +49,8 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-top: 4rem;
+    gap: 20px;
 }
 
 .Skill {
@@ -72,13 +58,16 @@
     height: auto;
     margin: 0 auto;
     text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    padding: 1rem;
     margin-bottom: 1rem;
  }
 
  .Skill img {
-     width: 30%;
-     height: auto;
-     margin: 0 auto;
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
  }
 
  .Skill p{
@@ -88,7 +77,7 @@
 
  .Skill p:last-child{
     font-size: calc(10px + .5vmin);
-    font-weight: 300;
+    font-weight: 400;
     margin: 1rem;
 }
 

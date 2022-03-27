@@ -3,7 +3,7 @@ import HTML from "../assets/icon/htmlLogo.png";
 import CSS from "../assets/icon/CssLogo.png";
 import JS from "../assets/icon/JSLogo.png";
 import XD from "../assets/icon/xd-logo.png";
-import React from "../assets/icon/ReactLogo-1.png";
+import React from "../assets/icon/ReactLogo.png";
 import exJS from "../assets/icon/expressJS.png";
 import nodeJS from "../assets/icon/nodeLogo.png";
 import SQL from "../assets/icon/sqlLogo.png";
