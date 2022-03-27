@@ -124,9 +124,12 @@
     .gridFrontSkills, .gridBackEndSkill {
         -ms-flex-wrap: wrap;     
         flex-wrap: wrap;
+        margin-top: 0;
+        gap: 0;
     }
 
     .Skill {
-        max-width: 50%;
+        max-width: 40%;
+        padding: 16px 8px;
     }
 }

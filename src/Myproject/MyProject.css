@@ -35,7 +35,8 @@
     display: block;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;}
+    align-items: center;
+}
 
 .project {
     width: 70%;
@@ -48,6 +49,76 @@
     -ms-flex-align: center;
     align-items: center;
     gap: 2rem;
+    padding: 1rem 0;
+}
+
+.project__front,
+.project__back {
+    -webkit-transition-timing-function: cubic-bezier(.1, .5, .3, 1);
+    -o-transition-timing-function: cubic-bezier(.1, .5, .3, 1);
+    transition-timing-function: cubic-bezier(.1, .5, .3, 1);
+    -webkit-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    -o-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+}
+
+.project__front {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.project__back {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.project__back p {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(255, 255, 255);
+}
+
+.project__front:hover,
+.project__front:hover,
+.project__front:hover {  
+    -webkit-transform: rotateY(180deg) .5s;
+    transform: rotateY(180deg) .5s;
+    opacity: 0;
+}
+
+.project_back:hover,
+.project_back:hover,
+.project_back:hover {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
 }
 
 .project:nth-child(2),.project:nth-child(4) {
@@ -163,6 +234,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+    .projectContainer {
+        margin: 0;
+    }
 
     .projectContainer h2 {
         font-size: 12vw;

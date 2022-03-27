@@ -32,7 +32,12 @@ function MyProject() {
                 </div>
                 <div className="projectDetail">
                     <div data-aos="slide-right" data-aos-offset="200" data-aos-anchor-placement="center-bottom">
-                        <WebApp/>
+                        <div className="project__front">
+                            <WebApp/>
+                        </div>
+                        <div className="project__back">
+                            <p>Back</p>
+                        </div>
                     </div>
                 </div>
             </div>

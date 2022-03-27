@@ -148,18 +148,102 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     background: rgba(255, 255, 255, 0.5);
     -webkit-box-shadow: 0 0 3px 3px rgb(255, 255, 255);
     box-shadow: 0 0 3px 3px rgb(255, 255, 255); /* outer */
     border-radius: 30px 10px 30px 10px;
     margin: 50px 0;
     padding: 15px;
+}
+
+.portfolio__item__front,
+.portfolio__item__back {
+    -webkit-transition-timing-function: cubic-bezier(.1, .5, .3, 1);
+    -o-transition-timing-function: cubic-bezier(.1, .5, .3, 1);
+    transition-timing-function: cubic-bezier(.1, .5, .3, 1);
+    -webkit-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    -o-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+}
+
+.portfolio__item__front {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.portfolio__item__back {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: inline-block;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.portfolio__item:last-child .portfolio__item__back {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.portfolio__item:hover .portfolio__item__front,
+.portfolio__item:focus .portfolio__item__front,
+.portfolio__item:active .portfolio__item__front {  
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+.portfolio__item:hover .portfolio__item__back,
+.portfolio__item:focus .portfolio__item__back,
+.portfolio__item:active .portfolio__item__back {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
 }
 
 .portfolio__item__header, 
@@ -188,6 +272,18 @@
     margin-right: 20px;
 }
 
+.portfolio__item__back p{
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.portfolio__item__back img{
+    width: 15%;
+    height: auto;
+    position: relative;
+}
+
+
 @media only screen and (max-width: 1440px) {
 
     .about__me__section {
@@ -208,6 +304,16 @@
 
     .about__me p, .portfolio__item__content p {
         font-size: 2vw;
+    }
+
+    .portfolio__item__back p {
+        font-size: 2vw;
+        line-height: 20px;
+    }
+
+    .portfolio__item {
+        padding: 25px 0;
+        margin: 25px 0;
     }
 
     /*Disable AOS*/
@@ -238,9 +344,7 @@
 }
 
 @media only screen and (max-width: 912px) {
-    .portfolio__item {
-        padding: 0;
-    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -252,12 +356,19 @@
 
     .about__me h2 { font-size: 4em; }
 
-    .about__me p, .portfolio__item__content p {
+    .about__me p, 
+    .portfolio__item__content p {
         font-size: 2.5vw;
     }
 
+    .portfolio__item__back p {
+        font-size: 2.5vw;
+        line-height: 10px;
+    }
+
     .portfolio__item {
-        border-radius: 30px 10px 30px 10px;
+        border-radius: 10px 5px 10px 5px;
+        padding: 10px 0;
         margin: 20px 0;
     }
 
