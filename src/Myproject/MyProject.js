@@ -41,7 +41,7 @@ function MyProject() {
                     <span>Dashboard</span>
                 </div>
                 <div className="projectDetail">
-                    <div data-aos="slide-left" data-aos-offset="10" data-aos-anchor-placement="top-center">
+                    <div data-aos="slide-left" data-aos-offset="25" data-aos-anchor-placement="top-center">
                         <Dashboard />
                     </div>
                 </div>
@@ -51,7 +51,7 @@ function MyProject() {
                     <span>Landing Page</span>
                 </div>
                 <div className="projectDetail">
-                    <div data-aos="slide-right" data-aos-offset="20" data-aos-anchor-placement="center-bottom">
+                    <div data-aos="slide-right" data-aos-offset="50" data-aos-anchor-placement="center-bottom">
                         <LandingPage />
                     </div>
                 </div>
@@ -61,7 +61,7 @@ function MyProject() {
                     <span>Wireframe</span>
                 </div>
                 <div className="projectDetail">
-                    <div data-aos="slide-left" data-aos-offset="30" data-aos-anchor-placement="bottom-bottom">
+                    <div data-aos="slide-left" data-aos-offset="150" data-aos-anchor-placement="bottom-bottom">
                         <Wireframe />
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 import './About.css';
-import CV from '../assets/CV/Resume-JirawatKaewmanee.pdf';
+import CV from '../assets/CV/CV-JirawatKaewmanee.pdf';
 import TimeIcon from '../assets/icon/chronometer.png';
 import PCIcon from '../assets/icon/pc.png';
 import SchoolIcon from '../assets/icon/education.png';
@@ -80,9 +80,9 @@ function About() {
               </div>
             </div>
             <div className='portfolio__item__back'>
-              <p>Responsive</p>
-              <p>Customizable</p>
-              <p>Consistent</p>
+              <p>Responsive and Customizable</p>
+              <p>Client-Side Web Apps working with SQL Server, APIs</p>
+              <p>Animation, Motion, and Transition</p>
               <p>Design as imagined</p>
             </div>
           </div>
