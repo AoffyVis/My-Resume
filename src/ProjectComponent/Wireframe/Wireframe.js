@@ -9,6 +9,17 @@ function Wireframe() {
           <div className='WireframeDetail'>
             <img src={XD} alt="XD"/>
           </div>
+          <div className="Content__Hover">
+            <div className="Content__Header">
+              <p>UI Design</p>
+            </div>
+            <div className="Content__detail">
+              <p>Build Illustrate design ideas using storyboards, process flows, and wireframe.
+              Design graphic user interface elements, like menus, tabs and widgets.
+              Build page navigation buttons and search fields and wireframe.
+              </p>
+            </div>
+          </div>
         </div>
     </div>
     );

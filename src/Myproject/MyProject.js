@@ -31,13 +31,8 @@ function MyProject() {
                     <span>Web Application</span>
                 </div>
                 <div className="projectDetail">
-                    <div data-aos="slide-right" data-aos-offset="200" data-aos-anchor-placement="center-bottom">
-                        <div className="project__front">
-                            <WebApp/>
-                        </div>
-                        <div className="project__back">
-                            <p>Back</p>
-                        </div>
+                    <div data-aos="slide-right" data-aos-offset="0" data-aos-anchor-placement="top-center">
+                        <WebApp/>
                     </div>
                 </div>
             </div>
@@ -46,7 +41,7 @@ function MyProject() {
                     <span>Dashboard</span>
                 </div>
                 <div className="projectDetail">
-                    <div data-aos="slide-left" data-aos-offset="200" data-aos-anchor-placement="center-bottom">
+                    <div data-aos="slide-left" data-aos-offset="10" data-aos-anchor-placement="top-center">
                         <Dashboard />
                     </div>
                 </div>
@@ -56,7 +51,7 @@ function MyProject() {
                     <span>Landing Page</span>
                 </div>
                 <div className="projectDetail">
-                    <div data-aos="slide-right" data-aos-offset="200" data-aos-anchor-placement="center-bottom">
+                    <div data-aos="slide-right" data-aos-offset="20" data-aos-anchor-placement="center-bottom">
                         <LandingPage />
                     </div>
                 </div>
@@ -66,7 +61,7 @@ function MyProject() {
                     <span>Wireframe</span>
                 </div>
                 <div className="projectDetail">
-                    <div data-aos="slide-left" data-aos-offset="200" data-aos-anchor-placement="center-bottom">
+                    <div data-aos="slide-left" data-aos-offset="30" data-aos-anchor-placement="bottom-bottom">
                         <Wireframe />
                     </div>
                 </div>

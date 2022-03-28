@@ -13,6 +13,14 @@ function LandingPage() {
             <img src={CSS} alt="css"/>
             <img src={JS} alt="js"/>
           </div>
+          <div className="Content__Hover">
+            <div className="Content__Header">
+              <p>Landing Page</p>
+            </div>
+            <div className="Content__detail">
+              <p>Build Single Page Website, Responsive, Animation, Motion, and designed to increase customer's conversion rate and improve usability.</p>
+            </div>
+          </div>
         </div>
     </div>
     );

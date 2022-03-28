@@ -19,6 +19,14 @@ function Dashboard() {
             <img src={JS} alt="JS"/>
             <img src={chartJS} alt="chartJS"/>
           </div>
+          <div className="Content__Hover">
+            <div className="Content__Header">
+              <p>Dashboard</p>
+            </div>
+            <div className="Content__detail">
+              <p>Build Client-Side Web Apps, Responsive, Real-time Data, and Real-time rendering chart.</p>
+            </div>
+          </div>
         </div>
       </div>
     );

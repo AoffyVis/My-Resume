@@ -27,6 +27,7 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
+    position: relative;
 }
 
 .Dashboard img {
@@ -43,4 +44,85 @@
 
 .DashboardDetail img{
     width: 20%;
+}
+
+/* Hover affects */
+
+.Content__Hover {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0 5px;
+    opacity: 0;
+}
+
+.Dashboard:hover .Content__Hover {
+    bottom: 0;
+    transition: all 0.3s;
+    transition-delay: 0.3s;
+    color: #fff;
+    background-color: rgba(7, 7, 7, 0.781);
+    opacity: 1;
+}
+
+.Content__Header,
+.Content__detail {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.Content__Header p {
+    font-size: 2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.Content__detail p {
+    font-size: 1vw;
+}
+
+.Content__detail li {
+    list-style: none;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .Content__Header p {
+        font-size: 3vw;
+    }
+
+    .Content__detail p {
+        font-size: 1.5vw;
+    }
+
+    .Content__detail li {
+        font-size: 1vw;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+
+    .Content__Header p {
+        font-size: 5vw;
+    }
+
+    .Content__detail p {
+        font-size: 3vw;
+    }
+
+    .Content__detail li {
+        font-size: 2.5vw;
+    }
+    
 }

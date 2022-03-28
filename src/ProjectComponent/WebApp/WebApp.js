@@ -17,6 +17,19 @@ function WebApp() {
             <img src={SQL} alt="sql"/>
             <img src={JS} alt="js"/>
           </div>
+          <div className="Content__Hover">
+            <div className="Content__Header">
+              <p>Web Application</p>
+            </div>
+            <div className="Content__detail">
+              <p>Build Client-Side Web Apps, Responsive, Real-time Data, and Real-time rendering chart, that working with SQL Server, and APIs</p>
+              <p>For example,
+                <li>Projects working with SQL to store and retrieve data.</li>
+                <li>Web Application interact with device hardware (EV Charger). </li>
+                <li>Web Application working with Google Maps API, Google Sheets.</li>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     );

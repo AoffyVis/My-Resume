@@ -79,7 +79,7 @@ a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
 .header__img {
-    width: 40%;
+    width: 30%;
     height: auto;
     margin-left: 50%;
     aspect-ratio: 1/1;
@@ -103,6 +103,14 @@ a:active { text-decoration: none; }
 
 @media only screen and (max-width: 1024px) {
 
+    .App-header {
+        min-height: 80vh;
+    }
+
+    .header__detail {
+        margin-right: 25%;
+    }
+
     .header__detail h2 {
         font-size: 6vw;
     }
@@ -119,13 +127,8 @@ a:active { text-decoration: none; }
         font-size: 7vw;
     }
 
-    .header__detail {
-        margin-right: 25%;
-    }
-
     .header__img {
-        width: 50%;
-        margin-left: 50%;
+        width: 40%;
     }
 
     .scroll-txt {
