@@ -1,5 +1,6 @@
 import './Wireframe.css';
 import XD from "../../assets/icon/xd-logo.png";
+import { FaPlus } from "react-icons/fa";
 
 function Wireframe() {
     return (
@@ -19,6 +20,9 @@ function Wireframe() {
               Build page navigation buttons and search fields and wireframe.
               </p>
             </div>
+          </div>
+          <div className="icon__corner">
+            <FaPlus className="plus__icon"/>
           </div>
         </div>
     </div>

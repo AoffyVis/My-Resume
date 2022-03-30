@@ -4,6 +4,8 @@ import JS from "../../assets/icon/JSLogo.png";
 import exJS from "../../assets/icon/expressJS.png";
 import nodeJS from "../../assets/icon/nodeLogo.png";
 import SQL from "../../assets/icon/sqlLogo.png";
+import { FaPlus } from "react-icons/fa";
+
 
 function WebApp() {
     return (
@@ -29,6 +31,9 @@ function WebApp() {
                 <li>Web Application working with Google Maps API, Google Sheets.</li>
               </p>
             </div>
+          </div>
+          <div className="icon__corner">
+            <FaPlus className="plus__icon"/>
           </div>
         </div>
       </div>

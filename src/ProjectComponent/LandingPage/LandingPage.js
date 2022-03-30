@@ -2,6 +2,7 @@ import './LandingPage.css';
 import HTML from "../../assets/icon/htmlLogo.png";
 import CSS from "../../assets/icon/CssLogo.png";
 import JS from "../../assets/icon/JSLogo.png";
+import { FaPlus } from "react-icons/fa";
 
 function LandingPage() {
     return (
@@ -20,6 +21,9 @@ function LandingPage() {
             <div className="Content__detail">
               <p>Build Single Page Website, Responsive, Animation, Motion, and designed to increase customer's conversion rate and improve usability.</p>
             </div>
+          </div>
+          <div className="icon__corner">
+            <FaPlus className="plus__icon"/>
           </div>
         </div>
     </div>

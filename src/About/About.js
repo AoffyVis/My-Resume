@@ -28,12 +28,12 @@ function About() {
         <div className="about__me" data-aos="zoom-in" data-aos-offset="200" data-aos-anchor-placement="top-bottom">
           <div className='about_me_content'>
             <h2>
-              What does I do?
+              What do I do?
             </h2>
-            <p>I'm currently working Front-end Developer.
+            <p>I'm currently working as Front-end Developer.
                 I obsess over the minor details in HTML/CSS/JAVASCRIPT and am passionate in getting computers to more
                 effectively work
-                on your side by freeing you of the burdens of carrying out repetitive tasks through automative
+                on your side by freeing you of the burdens of carrying out repetitive tasks through automated
                 processes. <br /><br />
                 For the front-end I usually work with Javascript, either standalone or including popular frameworks like
                 ReactJS, EJS. I also make the web pretty by using CSS preprocessors and, any of their
@@ -43,7 +43,7 @@ function About() {
                 I also have knowledge of computer programming languages such as PHP, MSSQL, and hardware engineering
             </p>
             <div className='btn'>
-              <a href={CV} download className='btn-primary'> Download CV</a>
+              <a href={CV} download className='btn-primary'>Download CV</a>
             </div>
           </div>
         </div>

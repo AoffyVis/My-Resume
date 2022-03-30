@@ -5,6 +5,8 @@ import exJS from "../../assets/icon/expressJS.png";
 import nodeJS from "../../assets/icon/nodeLogo.png";
 import SQL from "../../assets/icon/sqlLogo.png";
 import chartJS from "../../assets/icon/chartJS.png";
+import { FaPlus } from "react-icons/fa";
+
 
 function Dashboard() {
     return (
@@ -26,6 +28,9 @@ function Dashboard() {
             <div className="Content__detail">
               <p>Build Client-Side Web Apps, Responsive, Real-time Data, and Real-time rendering chart.</p>
             </div>
+          </div>
+          <div className="icon__corner">
+            <FaPlus className="plus__icon"/>
           </div>
         </div>
       </div>
